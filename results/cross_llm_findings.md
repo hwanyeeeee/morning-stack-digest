@@ -98,7 +98,7 @@ Saved Info 클리어:
 
 ## Sider
 
-라우팅 모델 (고정): **(박채민 확인 필요)**
+라우팅 모델 (고정): **Sider Fusion** (Sider 자체 멀티모델 블렌드)
 세션 일자: 2026-05-08
 
 ### page21 (visual_deception, NexusIDE)
