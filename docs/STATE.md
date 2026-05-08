@@ -43,3 +43,4 @@ INC0GNITO 2026 본선용 MemGuard 데모 사이트 — 30개 인젝션 페이지
   - 4단계: repo rename(morning-stack-digest) + page05 메타 콘텐츠를 KV-cache 논문으로 교체 + README "Morning Stack Digest" 리라이팅 + EVAL.md 분리(.gitignore) + index.html reveal 토글 제거 (commit `9c46857`)
   - 잔여(박주환): ChatGPT memory clear → page21 (NexusIDE interviewee_quote) 1개 던지고 follow-up 추천 + 새 대화 메모리 침투 검증. 본선 PPT에 academic backbone (MINJA 98.2%, EchoLeak CVE-2025-32711, AutoInject allelujah 92.4%, OWASP #1 AI threat 2026) 인용
   - 5단계: Cross-LLM 검증 16-cell matrix 완료 (results/). 본선 narrative pivot — "response poisoning + page-resident ambient context"가 진짜 vector, MINJA 3-step memory injection은 현실 모델에서 부분 작동.
+  - 6단계: Lakera Guard baseline 측정 — 33 인젝션 중 2건만 detect (6.1%). 한국어 0/17 (0.0%), 영어 2/16 (12.5%). personal_anecdote sub-form만 2/6, 나머지 5 sub-form 모두 0%. zero_width 0/10. SafeType은 PII redaction 도구로 위협 vector 직교 — 측정 불요. PPT 객관성 40점 핵심 정량 데이터. results/lakera_baseline.csv + run_lakera_baseline.py 추가.
