@@ -1,0 +1,33 @@
+# 개발 상황
+
+## 프로젝트
+INC0GNITO 2026 본선용 MemGuard 데모 사이트 — 30개 인젝션 페이지 + ground_truth.jsonl + GitHub Pages 배포 구조.
+
+## 플랜 단계
+- [x] 1단계: 모든 산출물 일괄 생성 (30 pages + ground_truth.jsonl + index.html + styles.css + README + .gitignore + .nojekyll)
+- [x] 2단계: 시각 비가시성 검증 (stdlib intent-check 100% PASS + GitHub Pages 배포 완료)
+- [x] 3-pre: 위장 패턴 sample 3개 ChatGPT 5 검증 — Pattern 1만 부분 작동, 나머지 5종 silent ignore.
+- [x] 3-main: panel 1이 /tmp/memguard-pages에서 30 페이지 일괄 갱신 + ground_truth + commit `2f1f0f5` + push 완료.
+  - acceptance PASS: grep 노골 0회, sub-form 6종 균등(5~6회), 브랜드 7종 균등(4~5회), forbidden 0개
+  - working dir(이 Dev-harness scratch)와 /tmp/memguard-pages 콘텐츠 완전 동기
+- [x] 4단계: 사이트 detection-evasion 강화 — 4-1~4-4 모두 PASS, 4-5 스킵.
+  - commit `9c46857 fix: strip detection signals from site-level perspective` push 동기
+  - GitHub repo rename: hwanyeeeee/memguard-test-page → hwanyeeeee/**morning-stack-digest**
+  - GitHub Pages 새 URL: https://hwanyeeeee.github.io/morning-stack-digest/
+
+## 현재 작업
+- 도구: claude
+- 위치: 완료
+- 수행 중: -
+- 재시도: 0
+
+## 완료
+- 시각: 2026-05-08 07:55
+- 비고:
+  - 1단계: 30 페이지 + ground_truth + index/styles/README/.nojekyll/.gitignore 일괄 생성 (commit `b9fa787`)
+  - 2단계: stdlib intent-check 100% PASS, GitHub Pages 배포
+  - 3-pre: 6 패턴 sample ChatGPT 5 검증 → Pattern 1만 부분 작동, 나머지 5종 silent ignore
+  - 3-main: 30 페이지 인젝션을 Pattern 1 (first_person_disguise) + 6 sub-form 균등 + 7 브랜드 분산으로 일괄 갱신 (commit `2f1f0f5`)
+  - 박주환·panel 1 재해석: 30 URL 한 번 측정은 비현실. 1 페이지/세션이 현실. Demo narrative = 3-step memory injection (MINJA): 페이지 노출 → follow-up 추천 → 메모리 침투
+  - 4단계: repo rename(morning-stack-digest) + page05 메타 콘텐츠를 KV-cache 논문으로 교체 + README "Morning Stack Digest" 리라이팅 + EVAL.md 분리(.gitignore) + index.html reveal 토글 제거 (commit `9c46857`)
+  - 잔여(박주환): ChatGPT memory clear → page21 (NexusIDE interviewee_quote) 1개 던지고 follow-up 추천 + 새 대화 메모리 침투 검증. 본선 PPT에 academic backbone (MINJA 98.2%, EchoLeak CVE-2025-32711, AutoInject allelujah 92.4%, OWASP #1 AI threat 2026) 인용
